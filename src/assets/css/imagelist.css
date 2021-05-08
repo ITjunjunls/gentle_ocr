@@ -1,0 +1,62 @@
+@import "base.css";
+dt:hover {
+    text-decoration: none;
+    background-color: #419FFF;
+}
+dtActive:hover {
+    color: white;
+}
+.left-menu {
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    height: 100vh;
+}
+.left-menu dt {
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+    font-size: 15px;
+}
+.dtActive {
+    background-color: #1f81d2;
+    box-shadow: 2px 0px 0px #efefef;
+    border-right: none;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+}
+.left-div {
+    float: left;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: scroll;
+    overflow: -Scroll;
+    overflow-x: hidden;
+}
+/* 下面是滚动条样式 */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: #a1a3a9;
+    border-radius: 3px;
+}
+
+/* 下面是列表增加删除的动画控制 */
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.5s;
+}
+
+.list-enter,
+.list-leave-to {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+/* 上面是列表增加删除的动画控制 */
+.list-item {
+    margin-top: 5px;
+}
